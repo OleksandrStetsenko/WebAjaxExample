@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web:web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:web="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        version="3.0">
+
+    <web:servlet>
+        <web:servlet-name>Login</web:servlet-name>
+        <web:servlet-class>com.stetsenko.webajaxexample.servlets.Login</web:servlet-class>
+
+        <web:init-param>
+            <param-name>root</param-name>
+            <param-value>123</param-value>
+        </web:init-param>
+    </web:servlet>
+
+    <web:servlet-mapping>
+        <web:servlet-name>Login</web:servlet-name>
+        <web:url-pattern>/login</web:url-pattern>
+    </web:servlet-mapping>
+
+    <resource-ref>
+        <res-ref-name>dataSource</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+</web:web-app>

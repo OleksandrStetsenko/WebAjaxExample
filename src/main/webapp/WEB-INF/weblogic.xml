@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/weblogic-web-app">
+	<resource-description>
+		<res-ref-name>dataSource</res-ref-name>
+		<jndi-name>myJNDIDBName</jndi-name>
+	</resource-description>
+</weblogic-web-app>
